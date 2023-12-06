@@ -6,5 +6,7 @@ ENV HOST=0.0.0.0
 COPY ./tmp/ ./
 
 RUN npm install
+RUN npm install -D tailwindcss postcss autoprefixer
+RUN npm i daisyui
 
 CMD ["npm", "run", "dev"]
